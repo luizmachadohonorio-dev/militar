@@ -1,0 +1,231 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f5f1;
+    color: #222;
+}
+
+/* CABEÇALHO */
+header {
+    background: #17251d;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h2 {
+    color: #e5c779;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e5c779;
+}
+
+/* INÍCIO */
+.inicio {
+    background: linear-gradient(135deg, #17251d, #344b38);
+    color: white;
+    min-height: 420px;
+    padding: 100px 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio h1 {
+    font-size: 42px;
+    color: #e5c779;
+    margin-bottom: 20px;
+}
+
+.inicio p {
+    font-size: 18px;
+    max-width: 750px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* BOTÃO */
+.botao {
+    background: #c5a653;
+    color: #17251d;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+/* SEÇÕES */
+section {
+    padding: 65px 10%;
+}
+
+.titulo {
+    text-align: center;
+    color: #24402c;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.sobre {
+    text-align: center;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: auto;
+    font-size: 17px;
+}
+
+/* BENEFÍCIOS */
+.beneficios {
+    background: #e8ede8;
+}
+
+/* CARTÕES */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 28px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000012;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.card h3 {
+    color: #31563b;
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* FORÇAS MILITARES */
+.forcas {
+    background: #17251d;
+    color: white;
+}
+
+.forcas .titulo {
+    color: #e5c779;
+}
+
+.forcas .card {
+    background: #293b30;
+    color: white;
+    text-align: center;
+}
+
+.forcas .card h3 {
+    color: #e5c779;
+}
+
+.forcas .card p {
+    color: #ddd;
+}
+
+/* REQUISITOS */
+.requisitos ul {
+    max-width: 700px;
+    margin: auto;
+    line-height: 2.2;
+    font-size: 17px;
+    list-style: none;
+}
+
+.requisitos li::before {
+    content: "✓ ";
+    color: #31563b;
+    font-weight: bold;
+}
+
+/* CONCLUSÃO */
+.conclusao {
+    background: #e8ede8;
+    text-align: center;
+}
+
+.conclusao p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.frase-final {
+    color: #31563b;
+    margin: 30px 0 15px;
+}
+
+/* RODAPÉ */
+footer {
+    background: #17251d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+/* CELULARES */
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    .inicio h1 {
+        font-size: 30px;
+    }
+
+    .inicio p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 45px 6%;
+    }
+}
